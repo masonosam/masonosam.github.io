@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chesstopia — 3D Chess Game with Living Heroes</title>
+  <link rel="icon" href="./assets/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-bg-wrap">
+      <img class="hero-bg" src="./assets/hero-bg.png" alt="">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-crystal-card">
+        <img class="hero-logo" src="./assets/icon.png" alt="Chesstopia">
+      </div>
+      <h1 class="hero-title">Chesstopia</h1>
+      <p class="hero-tagline">3D chess game with living heroes</p>
+      <p class="hero-desc">Enter the universe of Chesstopia — a stunning 3D chess game where classic strategy meets epic fantasy battles. Command an army of unique animated heroes and experience the timeless game of kings like never before.</p>
+      <a class="hero-cta" href="https://play.google.com/store/apps/details?id=com.chyuaim.chesstopia" target="_blank" rel="noopener">
+        <img src="./assets/badge.svg" alt="Get it on Google Play" class="cta-badge">
+      </a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Why Chesstopia</h2>
+      <div class="features-grid">
+        <div class="feature-card" style="--i:0">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Animated 3D Heroes</h3>
+          <p>Each piece is a fully animated hero with unique combat animations — warriors charge, bishops unleash magic, queens teleport, and rooks slam down with crushing force.</p>
+        </div>
+        <div class="feature-card" style="--i:1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Online PvP</h3>
+          <p>Challenge players worldwide in ranked chess matches. Elo matchmaking ensures fair competition. Climb the global leaderboard and prove your skill.</p>
+        </div>
+        <div class="feature-card" style="--i:2">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>1000+ Chess Puzzles</h3>
+          <p>Master essential chess tactics across 15 categories — forks, pins, skewers, deflection, and more. The ultimate puzzle trainer for sharpening your tactical vision.</p>
+        </div>
+        <div class="feature-card" style="--i:3">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Multiple Game Modes</h3>
+          <p>Vs Computer with 4 AI levels, Online PvP, Local Multiplayer hotseat, and Chess Puzzles. Play offline or online — no internet required for AI battles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <h2 class="section-title">White Order vs Black Legion</h2>
+      <div class="screenshot-gallery">
+        <div class="screenshot-card" style="--i:0" onclick="openLightbox(0)">
+          <img src="./assets/screenshots/screenshot_1.png" alt="Screenshot 1">
+        </div>
+        <div class="screenshot-card" style="--i:1" onclick="openLightbox(1)">
+          <img src="./assets/screenshots/screenshot_2.png" alt="Screenshot 2">
+        </div>
+        <div class="screenshot-card" style="--i:2" onclick="openLightbox(2)">
+          <img src="./assets/screenshots/screenshot_3.png" alt="Screenshot 3">
+        </div>
+        <div class="screenshot-card" style="--i:3" onclick="openLightbox(3)">
+          <img src="./assets/screenshots/screenshot_4.png" alt="Screenshot 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-bottom">
+    <div class="container">
+      <div class="cta-crystal-card">
+        <h2 class="cta-bottom-title">Lead Your Army to Glory</h2>
+        <p class="cta-bottom-desc">Free to download. Play chess online or offline — the battlefield awaits.</p>
+        <a class="cta-bottom-link" href="https://play.google.com/store/apps/details?id=com.chyuaim.chesstopia" target="_blank" rel="noopener">
+          <img src="./assets/badge.svg" alt="Get it on Google Play" class="cta-badge">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Chesstopia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="navLightbox(event, -1)">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" onclick="navLightbox(event, 1)">&#8250;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Screenshot">
+  </div>
+
+  <script>
+    const screenshots = [
+      './assets/screenshots/screenshot_1.png',
+      './assets/screenshots/screenshot_2.png',
+      './assets/screenshots/screenshot_3.png',
+      './assets/screenshots/screenshot_4.png'
+    ];
+    let currentIndex = 0;
+
+    function openLightbox(i) {
+      currentIndex = i;
+      document.getElementById('lightbox-img').src = screenshots[i];
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === document.getElementById('lightbox') || e.target.classList.contains('lightbox-close')) {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function navLightbox(e, dir) {
+      e.stopPropagation();
+      currentIndex = (currentIndex + dir + screenshots.length) % screenshots.length;
+      document.getElementById('lightbox-img').src = screenshots[currentIndex];
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('active')) return;
+      if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+      if (e.key === 'ArrowLeft') navLightbox(e, -1);
+      if (e.key === 'ArrowRight') navLightbox(e, 1);
+    });
+  </script>
+
+</body>
+</html>
