@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Shooter — Element Control</title>
+  <link rel="icon" href="./assets/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-bg-wrap">
+      <img class="hero-bg" src="./assets/hero-bg.png" alt="">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-icon-card">
+        <img class="hero-logo" src="./assets/icon.png" alt="Neon Shooter">
+      </div>
+      <h1 class="hero-title">Neon Shooter</h1>
+      <p class="hero-tagline">// Element Control //</p>
+      <p class="hero-desc">Smash through neon gates in a fast-paced endless arcade shooter where elemental strategy meets cyberpunk style. Choose fire, water, or wood and blast your way to the top of the scoreboard!</p>
+      <a class="hero-cta" href="https://play.google.com/store/apps/details?id=com.neonshooter.elementcontrol" target="_blank" rel="noopener">
+        <img src="./assets/badge.svg" alt="Get it on Google Play" class="cta-badge">
+      </a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">// Game Mechanics //</h2>
+      <div class="features-grid">
+
+        <div class="feature-card" style="--i:0">
+          <div class="feature-icon icon-fire">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4-3 8-7.5 8-12.5C20 5.5 16.5 2 12 2S4 5.5 4 9.5C4 14.5 8 19 12 22z"/><path d="M12 22c-2-1.5-4-4-4-7 0-2.5 2-4.5 4-4.5s4 2 4 4.5c0 3-2 5.5-4 7z"/></svg>
+          </div>
+          <h3>Element Cycle</h3>
+          <p>Fire beats Wood, Wood beats Water, Water beats Fire. Use the counter element for triple damage. Switch on the fly and master the rock-paper-scissors strategy.</p>
+        </div>
+
+        <div class="feature-card" style="--i:1">
+          <div class="feature-icon icon-power">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Power Up Your Ship</h3>
+          <p>Destroy gates to collect stat-boosting rewards. ATK for more damage, SPD for faster fire rate, and AMMO to launch multiple bullets at once.</p>
+        </div>
+
+        <div class="feature-card" style="--i:2">
+          <div class="feature-icon icon-combo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Score Combos</h3>
+          <p>Reach milestones for bonus points. Destroy both gates in a pair for a x3 multiplier. The deeper you go, the higher the score climbs.</p>
+        </div>
+
+        <div class="feature-card" style="--i:3">
+          <div class="feature-icon icon-control">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="10.01"/><line x1="10" y1="10" x2="10" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/></svg>
+          </div>
+          <h3>One-Touch Controls</h3>
+          <p>Drag to move, hold to fire, tap to switch elements. Simple to learn, impossible to master. Play anywhere with intuitive touch controls.</p>
+        </div>
+
+        <div class="feature-card feature-card-wide" style="--i:4">
+          <div class="feature-icon icon-difficulty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Adaptive Difficulty</h3>
+          <p>The game gets faster and tougher as your score grows. Adaptive difficulty ensures every run is a challenge. Plus, revive for a second chance at a new high score.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <h2 class="section-title">// Gameplay //</h2>
+      <div class="screenshot-gallery">
+        <div class="screenshot-card" style="--i:0" onclick="openLightbox(0)">
+          <img src="./assets/screenshots/screenshot_1.png" alt="Screenshot 1">
+        </div>
+        <div class="screenshot-card" style="--i:1" onclick="openLightbox(1)">
+          <img src="./assets/screenshots/screenshot_2.png" alt="Screenshot 2">
+        </div>
+        <div class="screenshot-card" style="--i:2" onclick="openLightbox(2)">
+          <img src="./assets/screenshots/screenshot_3.png" alt="Screenshot 3">
+        </div>
+        <div class="screenshot-card" style="--i:3" onclick="openLightbox(3)">
+          <img src="./assets/screenshots/screenshot_4.png" alt="Screenshot 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-bottom">
+    <div class="container">
+      <div class="cta-neon-card">
+        <h2 class="cta-bottom-title">Master the Element Cycle</h2>
+        <p class="cta-bottom-desc">Free to download. Can you set a new high score?</p>
+        <a class="cta-bottom-link" href="https://play.google.com/store/apps/details?id=com.neonshooter.elementcontrol" target="_blank" rel="noopener">
+          <img src="./assets/badge.svg" alt="Get it on Google Play" class="cta-badge">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Neon Shooter. All rights reserved.</p>
+      <a class="footer-back" href="../">&#8592; Masonosam</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="navLightbox(event, -1)">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" onclick="navLightbox(event, 1)">&#8250;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Screenshot">
+  </div>
+
+  <script>
+    const screenshots = [
+      './assets/screenshots/screenshot_1.png',
+      './assets/screenshots/screenshot_2.png',
+      './assets/screenshots/screenshot_3.png',
+      './assets/screenshots/screenshot_4.png'
+    ];
+    let currentIndex = 0;
+
+    function openLightbox(i) {
+      currentIndex = i;
+      document.getElementById('lightbox-img').src = screenshots[i];
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === document.getElementById('lightbox') || e.target.classList.contains('lightbox-close')) {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function navLightbox(e, dir) {
+      e.stopPropagation();
+      currentIndex = (currentIndex + dir + screenshots.length) % screenshots.length;
+      document.getElementById('lightbox-img').src = screenshots[currentIndex];
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('active')) return;
+      if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+      if (e.key === 'ArrowLeft') navLightbox(e, -1);
+      if (e.key === 'ArrowRight') navLightbox(e, 1);
+    });
+  </script>
+
+</body>
+</html>
